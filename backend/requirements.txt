@@ -1,0 +1,48 @@
+# AI Passenger Sentiment Analysis Platform
+# FINAL requirements.txt with ALL compatibility issues fixed
+# Python 3.11+
+# Updated: May 8, 2026
+
+# Core Framework
+fastapi>=0.104.0,<0.105.0
+uvicorn[standard]>=0.24.0,<0.25.0
+
+# HTTP Client (Fixed: was 0.25.0)
+httpx>=0.27.0,<1.0.0
+
+# Async (Fixed: must be <4.0.0 for FastAPI 0.104)
+anyio>=3.7.1,<4.0.0
+
+# Environment
+python-dotenv>=1.0.0,<2.0.0
+
+# Database
+sqlalchemy>=2.0.23,<3.0.0
+psycopg2-binary>=2.9.0,<3.0.0
+
+# Cache
+redis>=5.0.0,<6.0.0
+
+# Data Validation
+pydantic>=2.5.0,<3.0.0
+pydantic-settings>=2.1.0,<3.0.0
+
+# File Handling
+python-multipart>=0.0.6,<1.0.0
+
+# Security
+python-jose[cryptography]>=3.3.0,<4.0.0
+passlib[bcrypt]>=1.7.0,<2.0.0
+
+# Async Support
+asyncio>=3.4.3,<4.0.0
+
+# Testing (Optional)
+pytest>=7.4.0,<8.0.0
+pytest-asyncio>=0.21.0,<0.22.0
+
+# Production Server
+gunicorn>=21.0.0,<22.0.0
+
+# Logging
+python-json-logger>=2.0.0,<3.0.0
